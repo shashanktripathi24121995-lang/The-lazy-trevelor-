@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0c3553">
+<meta name="description" content="The Lazy Traveler — भारत की खूबसूरत जगहों, ट्रैवल ब्लॉग, फोटो और वीडियो की दुनिया।">
+<title>The Lazy Traveler | Explore Places, Create Memories</title>
+<style>
+:root{--navy:#0c3553;--blue:#1769aa;--gold:#ffc928;--ink:#172638;--muted:#637386;--paper:#f5f8fb}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);background:var(--paper)}a{color:inherit;text-decoration:none}button{font:inherit;cursor:pointer}.wrap{width:min(1180px,92%);margin:auto}
+header{position:sticky;top:0;z-index:10;background:#0b2e49f2;color:white;backdrop-filter:blur(12px);box-shadow:0 3px 18px #00182a22}.nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{display:flex;align-items:center;gap:10px;font-weight:850;letter-spacing:.2px}.brand-mark{font-size:30px}.brand small{display:block;font-size:11px;font-weight:500;opacity:.8;letter-spacing:1px}.links{display:flex;align-items:center;gap:22px;font-size:14px}.links a:hover{color:var(--gold)}.menu{display:none;background:none;color:white;border:1px solid #ffffff55;border-radius:9px;padding:8px 12px}
+.hero{min-height:470px;color:white;display:flex;align-items:center;background:linear-gradient(90deg,#061d32dd 0%,#08284299 48%,#061d3240 100%),url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=2000&q=85') center 48%/cover}
+.hero-content{padding:72px 0;max-width:700px}.eyebrow{display:inline-block;color:#ffe07a;text-transform:uppercase;letter-spacing:2px;font-size:12px;font-weight:800}.hero h1{font-size:clamp(42px,7vw,76px);line-height:1.02;margin:15px 0}.hero p{font-size:clamp(17px,2vw,21px);max-width:560px;color:#edf6ff;line-height:1.65}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 20px;border-radius:999px;background:var(--gold);color:#152b3e;font-weight:800;border:0}.btn.outline{background:transparent;border:1px solid #ffffffa8;color:white}.btn:hover{transform:translateY(-1px);filter:brightness(1.04)}
+section{padding:54px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:18px;margin-bottom:22px}.section-head h2{margin:0;font-size:clamp(25px,3vw,34px)}.section-head p{margin:7px 0 0;color:var(--muted)}.tiny-link{font-size:14px;color:var(--blue);font-weight:750;white-space:nowrap}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.destination{position:relative;overflow:hidden;min-height:265px;border-radius:18px;background:#dbe5ee;box-shadow:0 7px 24px #173a5510}.destination img{position:absolute;width:100%;height:100%;object-fit:cover;inset:0;transition:transform .45s}.destination:hover img{transform:scale(1.06)}.destination:after{content:"";position:absolute;inset:25% 0 0;background:linear-gradient(transparent,#061a2ae8)}.dest-info{position:absolute;z-index:1;bottom:0;left:0;right:0;padding:20px;color:white}.dest-info h3{font-size:23px;margin:0 0 5px}.dest-info p{margin:0;font-size:13px;color:#e4eff8}
+.blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.blog-card{background:white;border:1px solid #e0e8ef;border-radius:16px;overflow:hidden;box-shadow:0 7px 20px #193d5510}.blog-card img{width:100%;height:190px;object-fit:cover;display:block}.blog-copy{padding:18px}.tag{font-size:11px;text-transform:uppercase;letter-spacing:1px;color:var(--blue);font-weight:800}.blog-copy h3{margin:8px 0;font-size:20px}.blog-copy p{margin:0 0 15px;color:var(--muted);line-height:1.55;font-size:14px}.read{border:0;background:none;color:var(--blue);font-weight:800;padding:0}.video-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.video-card{position:relative;border-radius:16px;overflow:hidden;min-height:220px;background:#0c3553;color:white}.video-card img{width:100%;height:220px;object-fit:cover;display:block;filter:brightness(.78)}.play{position:absolute;top:40%;left:50%;transform:translate(-50%,-50%);border:1px solid #ffffffaa;background:#ffffff25;color:white;border-radius:50%;width:55px;height:55px;font-size:22px}.video-label{position:absolute;bottom:0;padding:16px;font-weight:800}
+.about{background:#e8f1f7}.about-inner{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}.about h2{font-size:34px;margin:0 0 12px}.about p{color:#526477;line-height:1.8}.about-panel{background:var(--navy);color:white;border-radius:20px;padding:28px}.about-panel h3{margin-top:0}.about-panel p{color:#d6e5f0}
+footer{background:#071f31;color:#dbe8f1;padding:35px 0 20px}.footer-top{display:flex;justify-content:space-between;gap:25px;flex-wrap:wrap;align-items:center}.socials{display:flex;gap:12px;flex-wrap:wrap}.socials a{border:1px solid #ffffff40;border-radius:999px;padding:9px 13px;font-size:13px}.footnote{border-top:1px solid #ffffff25;margin-top:25px;padding-top:17px;font-size:12px;color:#a9bdcd;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.modal{position:fixed;inset:0;z-index:30;background:#061a2acc;display:none;align-items:center;justify-content:center;padding:20px}.modal.open{display:flex}.modal-box{max-width:620px;width:100%;background:white;border-radius:18px;padding:26px;max-height:85vh;overflow:auto}.modal-box h2{margin-top:0}.modal-close{float:right;border:0;background:#eaf0f5;border-radius:50%;width:36px;height:36px;font-size:20px}.notice{font-size:13px;color:var(--muted)}
+@media(max-width:800px){.links{display:none;position:absolute;top:72px;left:0;right:0;background:#0b2e49;padding:18px 4%;flex-direction:column;align-items:flex-start}.links.open{display:flex}.menu{display:block}.grid,.blog-grid,.video-grid{grid-template-columns:repeat(2,1fr)}.about-inner{grid-template-columns:1fr}.hero{min-height:430px}}
+@media(max-width:520px){.grid,.blog-grid,.video-grid{grid-template-columns:1fr}.destination{min-height:245px}.section-head{align-items:start;flex-direction:column}.hero-content{padding:58px 0}.hero h1{font-size:47px}.brand{font-size:14px}}
+</style>
+</head>
+<body>
+<header>
+ <div class="wrap nav">
+  <a class="brand" href="#home"><span class="brand-mark">🏔️</span><span>The Lazy Traveler<small>EXPLORE • FEEL • REMEMBER</small></span></a>
+  <button class="menu" id="menuBtn" aria-label="मेन्यू खोलें">☰ Menu</button>
+  <nav class="links" id="navLinks"><a href="#home">Home</a><a href="#destinations">Destinations</a><a href="#blogs">Travel Blogs</a><a href="#videos">Videos</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+ </div>
+</header>
+<main>
+<section class="hero" id="home"><div class="wrap"><div class="hero-content">
+ <span class="eyebrow">Travel • Reels • Stories • Adventures</span>
+ <h1>The Lazy<br>Traveler</h1><p>Just go, the world is waiting! खूबसूरत रास्तों, पहाड़ों और यादगार सफ़र की कहानियाँ — एक जगह।</p>
+ <div class="actions"><a class="btn" href="#destinations">Explore Places&nbsp; →</a><a class="btn outline" href="#blogs">Read Travel Blogs</a></div>
+</div></div></section>
+<section id="destinations"><div class="wrap">
+ <div class="section-head"><div><h2>Popular Destinations</h2><p>भारत की खूबसूरत जगहों से अपनी अगली यात्रा की शुरुआत करें।</p></div><a class="tiny-link" href="#destinations">Explore all ↓</a></div>
+ <div class="grid">
+  <a class="destination" href="#blogs"><img loading="lazy" src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=900&q=80" alt="मनाली के पहाड़"><div class="dest-info"><h3>Manali</h3><p>❖ हिमाचल प्रदेश</p></div></a>
+  <a class="destination" href="#blogs"><img loading="lazy" src="https://images.unsplash.com/photo-1595815771614-ade9d652a65d?auto=format&fit=crop&w=900&q=80" alt="कसोल की घाटी"><div class="dest-info"><h3>Kasol</h3><p>❖ पार्वती वैली, हिमाचल</p></div></a>
+  <a class="destination" href="#blogs"><img loading="lazy" src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=900&q=80" alt="बर्फीले पहाड़"><div class="dest-info"><h3>Kullu & Mountains</h3><p>❖ हिमालयी नज़ारे</p></div></a>
+ </div>
+</div></section>
+<section id="blogs" style="background:#fff"><div class="wrap">
+ <div class="section-head"><div><h2>Latest Travel Blogs</h2><p>सफ़र के अनुभव, काम की जानकारी और घूमने के टिप्स।</p></div><span class="tiny-link">Stories from the road ✦</span></div>
+ <div class="blog-grid">
+  <article class="blog-card"><img loading="lazy" src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=900&q=80" alt="पहाड़ों की यात्रा"><div class="blog-copy"><span class="tag">Mountain Escape</span><h3>Manali: A Journey to Remember</h3><p>ठंडी हवा, ऊँचे पहाड़ और रास्ते भर खूबसूरत नज़ारे — मनाली ट्रिप प्लान करने के लिए शुरुआती गाइड।</p><button class="read" data-article="manali">Read story →</button></div></article>
+  <article class="blog-card"><img loading="lazy" src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=900&q=80" alt="झील और पहाड़"><div class="blog-copy"><span class="tag">Road Trip</span><h3>Manali to Kasol: Road Trip Guide</h3><p>रूट, घूमने की जगहें और यात्रा से पहले ध्यान रखने योग्य बातें — अपनी अगली रोड ट्रिप के लिए।</p><button class="read" data-article="kasol">Read story →</button></div></article>
+  <article class="blog-card"><img loading="lazy" src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=900&q=80" alt="पुराना किला और पहाड़"><div class="blog-copy"><span class="tag">Culture & History</span><h3>Hidden Gems of Himachal</h3><p>लोकल संस्कृति, पुराने मंदिर और शांत जगहें जो आपकी यात्रा को यादगार बना सकती हैं।</p><button class="read" data-article="hidden">Read story →</button></div></article>
+ </div>
+</div></section>
+<section id="videos"><div class="wrap">
+ <div class="section-head"><div><h2>Travel Videos & Reels</h2><p>अपने सफ़र की वीडियो यहाँ जोड़ें।</p></div><a class="tiny-link" href="#contact">Add your videos ↓</a></div>
+ <div class="video-grid">
+  <div class="video-card"><img loading="lazy" src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=800&q=80" alt="पहाड़ी यात्रा वीडियो"><button class="play" data-video="Manali Trip Vlog" aria-label="वीडियो जानकारी">▶</button><div class="video-label">Manali Trip Vlog</div></div>
+  <div class="video-card"><img loading="lazy" src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=800&q=80" alt="घाटी की वीडियो"><button class="play" data-video="Kasol Travel Reel" aria-label="वीडियो जानकारी">▶</button><div class="video-label">Kasol Travel Reel</div></div>
+  <div class="video-card"><img loading="lazy" src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80" alt="सूर्यास्त की वीडियो"><button class="play" data-video="Roads & Sunsets" aria-label="वीडियो जानकारी">▶</button><div class="video-label">Roads & Sunsets</div></div>
+ </div>
+ <p class="notice">नोट: ये वीडियो कार्ड डेमो हैं; अपनी YouTube वीडियो या Reel के लिंक बाद में जोड़ें।</p>
+</div></section>
+<section class="about" id="about"><div class="wrap about-inner">
+ <div><span class="eyebrow" style="color:#1769aa">A little about us</span><h2>Collect Moments,<br>Not Things.</h2><p>The Lazy Traveler उन लोगों के लिए है जिन्हें नई जगहें देखना, पहाड़ी रास्तों पर निकलना और हर सफ़र से एक कहानी लेकर लौटना पसंद है। यहाँ आपको ट्रैवल ब्लॉग, फोटो और वीडियो मिलेंगे।</p><a class="btn" href="#contact">Let’s Connect</a></div>
+ <div class="about-panel"><h3>✦ सफ़र की अगली कहानी आपकी?</h3><p>अपनी पसंदीदा जगह, ट्रिप की यादें या कोई सवाल साझा करें। इस वेबसाइट को अपने असली फोटो, वीडियो और अनुभवों से अपडेट करते रहें।</p><p><strong>Travel • Explore • Live</strong></p></div>
+</div></section>
+<section id="contact"><div class="wrap">
+ <div class="section-head"><div><h2>Let’s Connect</h2><p>अपनी ट्रैवल स्टोरीज़ और नए सफ़र के लिए जुड़ें।</p></div></div>
+ <div class="about-panel"><h3>The Lazy Traveler</h3><p>Instagram पर ट्रैवल फोटो और Reels देखें। नीचे अपना सही प्रोफ़ाइल लिंक डालें।</p><a class="btn" href="https://www.instagram.com/the_lazt_traveler/" target="_blank" rel="noopener">Open Instagram ↗</a><p class="notice" style="color:#d6e5f0">Instagram प्रोफ़ाइल लिंक सेट कर दिया गया है।</p></div>
+</div></section>
+</main>
+<footer><div class="wrap">
+ <div class="footer-top"><a class="brand" href="#home"><span class="brand-mark">🏔️</span><span>The Lazy Traveler<small>Travel • Explore • Live</small></span></a><div class="socials"><a href="#destinations">Destinations</a><a href="#blogs">Blogs</a><a href="#videos">Videos</a><a href="https://www.instagram.com/the_lazt_traveler/" target="_blank" rel="noopener">Instagram</a></div></div>
+ <div class="footnote"><span>© <span id="year"></span> The Lazy Traveler. Made for the love of travel.</span><span>Just go, the world is waiting! ♡</span></div>
+</div></footer>
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal-box"><button class="modal-close" id="modalClose" aria-label="बंद करें">×</button><h2 id="modalTitle">Travel Story</h2><div id="modalText"></div></div></div>
+<script>
+const menuBtn=document.getElementById('menuBtn'),navLinks=document.getElementById('navLinks');
+menuBtn.addEventListener('click',()=>navLinks.classList.toggle('open'));
+navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>navLinks.classList.remove('open')));
+document.getElementById('year').textContent=new Date().getFullYear();
+const modal=document.getElementById('modal'),modalTitle=document.getElementById('modalTitle'),modalText=document.getElementById('modalText');
+const stories={
+ manali:['Manali: A Journey to Remember','<p><strong>यात्रा की योजना:</strong> जाने से पहले मौसम और सड़क की स्थिति देखें, होटल पहले से बुक करें और ऊँचाई वाले इलाकों के लिए गर्म कपड़े रखें।</p><p><strong>क्या देखें:</strong> Old Manali, Hadimba Temple, Solang Valley और आसपास की घाटियाँ। उपलब्धता और स्थानीय नियम यात्रा के समय जाँचें।</p><p>यह एक शुरुआती डेमो लेख है — अपने असली अनुभव, बजट और तस्वीरें यहाँ जोड़ें।</p>'],
+ kasol:['Manali to Kasol: Road Trip Guide','<p>मनाली से कसोल की यात्रा में पहाड़ी सड़कें, नदी के नज़ारे और छोटे कस्बे सफ़र का हिस्सा हैं। यात्रा समय ट्रैफिक, मौसम और सड़क की स्थिति के अनुसार बदल सकता है।</p><p><strong>टिप्स:</strong> दिन में यात्रा करें, पानी साथ रखें, कचरा अपने साथ वापस लाएँ और निकलने से पहले लोकल ट्रैवल अपडेट देखें।</p><p>यह डेमो लेख है; अपने रूट, खर्च और अनुभव के अनुसार अपडेट करें।</p>'],
+ hidden:['Hidden Gems of Himachal','<p>हिमाचल में मशहूर जगहों के अलावा शांत गाँव, लोकल बाज़ार, पुराने मंदिर और छोटे ट्रेक भी देखने लायक हैं। स्थानीय लोगों की सलाह लें और धार्मिक/प्राकृतिक स्थलों का सम्मान करें।</p><p>यहाँ अपनी खोजी हुई जगहों के नाम, फोटो, रास्ता और यात्रा के उपयोगी सुझाव जोड़ें।</p>']
+};
+document.querySelectorAll('[data-article]').forEach(b=>b.addEventListener('click',()=>{const s=stories[b.dataset.article];modalTitle.textContent=s[0];modalText.innerHTML=s[1];modal.classList.add('open')}));
+document.querySelectorAll('[data-video]').forEach(b=>b.addEventListener('click',()=>{modalTitle.textContent=b.dataset.video;modalText.innerHTML='<p>यह वीडियो प्लेसहोल्डर है। अपनी YouTube वीडियो या Instagram Reel का लिंक जोड़ने पर यहाँ वास्तविक वीडियो दिखाया जा सकता है।</p><p>संपादन के लिए index.html में इस वीडियो कार्ड का लिंक बदलें।</p>';modal.classList.add('open')}));
+function closeModal(){modal.classList.remove('open')}
+document.getElementById('modalClose').addEventListener('click',closeModal);
+modal.addEventListener('click',e=>{if(e.target===modal)closeModal()});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
+</script>
+</body></html>
